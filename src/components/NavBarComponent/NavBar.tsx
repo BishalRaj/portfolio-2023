@@ -1,24 +1,20 @@
-import React from 'react'
-import { Row, Col } from 'react-bootstrap'
-// import Col from 'react-bootstrap/Col';
-
+import { Nav, Navbar as NavbarBs } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import navItems from "../../data/nav.json";
+import firstLetterUpperCase from "../../utilities/firstLetterUpperCase";
 const NavBar = () => {
   return (
-    <div className="w-100 bg-danger">
-        <Row>
-            <Col lg={2}>
-                a
-            </Col>
-            <Col lg={3}>
-                a
-            </Col>
-            
-            <Col lg={7}>
-                a
-            </Col>
-        </Row>
-    </div>
-  )
-}
+    <NavbarBs className="bg-danger px-5">
+      Logo
+      <Nav className="ms-auto">
+        {navItems.map((item, index) => (
+          <Nav.Link to={item.item} as={NavLink} key={index * 1561}>
+            <span>0{index + 1}.</span> {firstLetterUpperCase(item.item)}
+          </Nav.Link>
+        ))}
+      </Nav>
+    </NavbarBs>
+  );
+};
 
-export default NavBar
+export default NavBar;
