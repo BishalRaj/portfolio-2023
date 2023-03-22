@@ -1,0 +1,29 @@
+@use '../../assets/scss/static' as sv;
+.nav-bar{
+    background-color: sv.$navy-blue-dark;
+    height: 75px;
+}
+
+.nav-text{
+    font-family: sv.$font-mono;
+    font-size: 13px !important;
+    span{
+        color: sv.$green;
+    }
+}
+
+#logo{
+    color: sv.$green !important;
+    // box-sizing: inherit;
+}
+.logo {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.logo-letter{
+  
+}
