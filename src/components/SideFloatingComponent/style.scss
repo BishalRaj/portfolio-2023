@@ -1,0 +1,31 @@
+@use "../../assets/scss/static" as sv;
+.floating-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  ul {
+    li {
+      list-style: none;
+      font-size: 20px;
+      color: sv.$slate;
+    }
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.floating-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  a {
+    text-decoration: none !important;
+    writing-mode: vertical-rl;
+    color: sv.$slate;
+    font-family: sv.$font-mono;
+    font-size: small;
+  }
+}

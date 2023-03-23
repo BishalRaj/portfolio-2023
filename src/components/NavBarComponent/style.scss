@@ -5,7 +5,7 @@
 }
 
 .nav-text{
-    font-family: sv.$font-mono;
+    font-family: sv.$font-mono !important;
     font-size: 13px !important;
     span{
         color: sv.$green;

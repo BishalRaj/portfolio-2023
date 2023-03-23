@@ -15,7 +15,7 @@ const Intro = () => {
         <div>
           <h3>I build things in the web.</h3>
         </div>
-        <div className="w-50">
+        <div className="w-50 my-4">
           <p className="color-slate">
             I’m a software engineer specializing in building (and occasionally
             designing) exceptional digital experiences. Recently I graduated my
