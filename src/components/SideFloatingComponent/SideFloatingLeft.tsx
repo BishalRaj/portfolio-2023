@@ -3,8 +3,8 @@ import "./style.scss";
 import social from "../../data/social";
 const SideFloatingLeft = () => {
   const socialIcons = social.map((x) => (
-    <a href={x.link}>
-      <li className="my-3">{x.icon}</li>
+    <a href={x?.link}>
+      <li className="my-3">{x?.icon}</li>
     </a>
   ));
   return (
