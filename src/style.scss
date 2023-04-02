@@ -1,12 +1,9 @@
-@use './assets/scss/static' as sv;
+@use "../public/scss/static" as sv;
 
-.main-container{
-padding: 0 !important; 
-// background-color: sv.$green ;
-background-color: sv.$navy-blue-dark;
-
-overflow: hidden;
-font-family: sv.$font-sans !important ;
+.main-container {
+  padding: 0 !important;
+  // background-color: sv.$green ;
+  background-color: sv.$navy-blue-dark;
+  overflow: hidden;
+  font-family: sv.$font-sans !important ;
 }
-
-

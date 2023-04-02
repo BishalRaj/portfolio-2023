@@ -18,9 +18,8 @@ const Intro = () => {
         <div className="w-50 my-4">
           <p className="color-slate">
             I’m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Recently I graduated my
-            Masters programme and would love to build accessible, human-centered
-            products.
+            designing) exceptional digital experiences. I would love to build
+            accessible, human-centered products.
           </p>
         </div>
         <button className="intro-button px-4 py-3">Check My Resume!</button>

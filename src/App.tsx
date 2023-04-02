@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Container } from "react-bootstrap";
+import About from "./components/AboutComponent/About";
 import Intro from "./components/IntroComponent/Intro";
 import NavBar from "./components/NavBarComponent/NavBar";
 import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
@@ -16,6 +16,11 @@ function App() {
 
       {/* Section Intro */}
       <Intro />
+
+      <div className="w-100 bg-white">.</div>
+
+      {/* Section About */}
+      <About />
     </Container>
   );
 }
