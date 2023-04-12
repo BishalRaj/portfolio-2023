@@ -71,3 +71,24 @@ $transition-time: 0.25s;
     }
   }
 }
+p {
+  font-family: sv.$font-sans !important;
+  color: sv.$slate;
+  line-height: 1.5 !important;
+  // font-size: 17px;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: sv.$green !important;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid sv.$green;
+    border-bottom-width: 0px;
+    &:hover {
+      color: sv.$green;
+      border-bottom-width: 1px !important;
+      transform: 13s !important;
+    }
+  }
+}

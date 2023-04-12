@@ -5,24 +5,37 @@ const About = () => {
   return (
     <Row className=" d-flex justify-content-center align-items-center section-about">
       <Col lg={12}>
-        <Row className="d-flex justify-content-center">
-          <Col lg={5} className="bg-warning">
-            Hello! My name is Bishal and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
-            <br />
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients. <br />I also recently launched
-            a course that covers everything you need to build a web app with the
-            Spotify API using Node & React. <br /> Here are a few technologies
-            I’ve been working with recently:
+        <Row className="d-flex justify-content-center px-5">
+          <Col lg={5} className="about-sans px-5">
+            <h1>About Me</h1>
+
+            <p>
+              I am a forward-thinking software engineer with 2 years of
+              experience building clean and scalable web applications using
+              JavaScript (React | Node). I am a seasoned professional with a
+              background in Full Stack lifecycle and have quickly learned and
+              mastered new technologies while working on both team and
+              self-directed goals.
+            </p>
+            <p>
+              I have experience working on various projects, including "
+              <a>My IT Enabler</a>" and "<a>Flash Sale Nepal</a>" at Gurung
+              Tech, and "Report Manager" and landing pages at{" "}
+              <a>Terakoya Academia</a>. I hold an MSc in Computer Science from
+              Coventry University and a BSc in Computing from the same
+              institution.
+            </p>
+            <p>
+              I am familiar with tools like SonarQube, Git, Microsoft SQL
+              Server, and React Developer Tools.
+            </p>
+            <p>
+              Here are a few technologies I’ve been working with recently: Java,
+              JavaScript, Node.js, Typescript, React, Express, MongoDB, Git,
+              HTML, CSS, and more.
+            </p>
           </Col>
-          <Col lg={3} className=" ">
+          <Col lg={3} className="my-auto">
             <div className="about-img-div">
               <img src="/images/me.jpg" alt="" className="" />
             </div>
