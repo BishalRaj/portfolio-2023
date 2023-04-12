@@ -83,19 +83,17 @@ p {
     color: sv.$green !important;
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
-      bottom: 0;
-      left: 0;
       width: 0%;
       height: 1px;
       background-color: sv.$green;
+      bottom: 0;
+      left: 0;
       transition: width 0.2s ease-in-out;
-      z-index: 1;
     }
-
-    &:hover:before {
+    &:hover::before {
       width: 100%;
     }
   }
