@@ -20,19 +20,29 @@ const About = () => {
             <p>
               I have experience working on various projects, including "
               <a>My IT Enabler</a>" and "<a>Flash Sale Nepal</a>" at Gurung
-              Tech, and "Report Manager" and landing pages at{" "}
-              <a>Terakoya Academia</a>. I hold an MSc in Computer Science from
-              Coventry University and a BSc in Computing from the same
-              institution.
+              Tech, and "Report Manager", "<a>Terakoya</a>" and "<a>YouMe</a>"
+              landing pages at <a>Terakoya Academia</a>. I hold an MSc in
+              Computer Science from Coventry University and a BSc in Computing
+              from the same institution.
             </p>
             <p>
               I am familiar with tools like SonarQube, Git, Microsoft SQL
               Server, and React Developer Tools.
             </p>
             <p>
-              Here are a few technologies I’ve been working with recently: Java,
-              JavaScript, Node.js, Typescript, React, Express, MongoDB, Git,
-              HTML, CSS, and more.
+              Here are a few technologies I’ve been working with recently:
+              <ul className="skills-grid">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
             </p>
           </Col>
           <Col lg={3} className="my-auto">

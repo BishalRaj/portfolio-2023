@@ -98,3 +98,9 @@ p {
     }
   }
 }
+
+.skills-grid {
+  font-family: sv.$font-mono !important;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+}
