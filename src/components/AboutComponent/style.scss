@@ -82,13 +82,21 @@ p {
     cursor: pointer;
     color: sv.$green !important;
     position: relative;
-    overflow: hidden;
-    border-bottom: 1px solid sv.$green;
-    border-bottom-width: 0px;
-    &:hover {
-      color: sv.$green;
-      border-bottom-width: 1px !important;
-      transform: 13s !important;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: sv.$green;
+      transition: width 0.2s ease-in-out;
+      z-index: 1;
+    }
+
+    &:hover:before {
+      width: 100%;
     }
   }
 }
