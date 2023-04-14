@@ -100,7 +100,22 @@ p {
 }
 
 .skills-grid {
-  font-family: sv.$font-mono !important;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    line-height: 30px;
+    font-family: sv.$font-mono;
+    font-size: small;
+    &::before {
+      content: "▹";
+      color: sv.$green;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }

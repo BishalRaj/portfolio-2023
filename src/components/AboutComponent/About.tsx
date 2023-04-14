@@ -31,17 +31,13 @@ const About = () => {
             </p>
             <p>
               Here are a few technologies I’ve been working with recently:
-              <ul className="skills-grid">
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
+              <ul className="skills-grid px-0">
+                <li>JavaScript (ES6+)</li>
                 <li>TypeScript</li>
                 <li>React</li>
+                <li>Java (SpringBoot)</li>
+                <li>Node.js</li>
                 <li>Express</li>
-                <li>MongoDB</li>
-                <li>Git</li>
-                <li>HTML</li>
-                <li>CSS</li>
               </ul>
             </p>
           </Col>
