@@ -1,0 +1,59 @@
+@use "../../../public/scss/static" as sv;
+@use "../AboutComponent/style.scss" as abt;
+
+.section-work {
+  height: 100vh !important;
+}
+
+.tabpanel {
+  font-family: sv.$font-mono !important;
+}
+.tabpanel-content {
+  color: sv.$light-slate !important;
+}
+
+.tab {
+  font-family: sv.$font-mono !important;
+  align-items: start !important;
+  color: white !important;
+  min-height: 25px !important;
+  text-transform: none !important;
+  &:hover {
+    color: sv.$green !important;
+    background-color: rgba($color: sv.$green, $alpha: 0.05);
+  }
+  &:active {
+    color: sv.$green !important;
+  }
+}
+
+.Mui-selected {
+  //   background-color: rgba($color: sv.$green, $alpha: 0.05) !important;
+  color: sv.$green !important;
+  //   border: none !important;
+  border-color: sv.$green;
+}
+
+.MuiTabs-indicator {
+  background-color: sv.$green !important;
+  width: 2.5px !important;
+  //   height: 20% !important;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  // margin-bottom: 5px;
+  // line-height: 30px;
+  // font-family: sv.$font-mono;
+  font-size: small;
+  &::before {
+    content: "▹";
+    color: sv.$green;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

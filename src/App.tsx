@@ -4,6 +4,7 @@ import Intro from "./components/IntroComponent/Intro";
 import NavBar from "./components/NavBarComponent/NavBar";
 import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
 import "./style.scss";
+import Work from "./components/WorkComponent/Work";
 
 function App() {
   return (
@@ -21,6 +22,12 @@ function App() {
 
       {/* Section About */}
       <About />
+
+      <div className="w-100 bg-white">.</div>
+
+      {/* Work History */}
+
+      <Work />
     </Container>
   );
 }
