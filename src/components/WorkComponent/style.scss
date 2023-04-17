@@ -1,5 +1,5 @@
 @use "../../../public/scss/static" as sv;
-@use "../AboutComponent/style.scss" as abt;
+// @use "../AboutComponent/style.scss" as abt;
 
 .section-work {
   height: 100vh !important;
@@ -28,9 +28,7 @@
 }
 
 .Mui-selected {
-  //   background-color: rgba($color: sv.$green, $alpha: 0.05) !important;
   color: sv.$green !important;
-  //   border: none !important;
   border-color: sv.$green;
 }
 
