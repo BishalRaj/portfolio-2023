@@ -1,5 +1,4 @@
 @use "../../../public/scss/static" as sv;
-// @use "../AboutComponent/style.scss" as abt;
 
 .section-work {
   height: 100vh !important;
@@ -35,16 +34,12 @@
 .MuiTabs-indicator {
   background-color: sv.$green !important;
   width: 2.5px !important;
-  //   height: 20% !important;
 }
 
 .tabpanel-content > ul > li {
   list-style: none;
   position: relative;
   padding-left: 20px;
-  // margin-bottom: 5px;
-  // line-height: 30px;
-  // font-family: sv.$font-mono;
   font-size: small;
   &::before {
     content: "▹";
