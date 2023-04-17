@@ -62,8 +62,8 @@ export default function VerticalTabs() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         sx={{
-          borderLeft: 2,
-          borderColor: "#495670",
+          // borderLeft: 2,
+          // borderColor: "#495670",
           minWidth: "150px",
           maxWidth: "150px",
           // textAlign: "left",
@@ -71,10 +71,42 @@ export default function VerticalTabs() {
           // color: "white",
         }}
       >
-        <Tab className="tab" label="Gurung Tech" {...a11yProps(0)} />
-        <Tab className="tab" label="Cloud Factory" {...a11yProps(1)} />
-        <Tab className="tab" label="Terakoya" {...a11yProps(2)} />
-        <Tab className="tab" label="Suprieve" {...a11yProps(3)} />
+        <Tab
+          className="tab"
+          sx={{
+            borderLeft: 2,
+            borderColor: "#495670",
+          }}
+          label="Gurung Tech"
+          {...a11yProps(0)}
+        />
+        <Tab
+          className="tab"
+          sx={{
+            borderLeft: 2,
+            borderColor: "#495670",
+          }}
+          label="Cloud Factory"
+          {...a11yProps(1)}
+        />
+        <Tab
+          className="tab"
+          sx={{
+            borderLeft: 2,
+            borderColor: "#495670",
+          }}
+          label="Terakoya"
+          {...a11yProps(2)}
+        />
+        <Tab
+          className="tab"
+          sx={{
+            borderLeft: 2,
+            borderColor: "#495670",
+          }}
+          label="Suprieve"
+          {...a11yProps(3)}
+        />
         {/* <Tab className="tab" label="Item Five" {...a11yProps(4)} />
         <Tab className="tab" label="Item Six" {...a11yProps(5)} />
         <Tab className="tab" label="Item Seven" {...a11yProps(6)} /> */}
@@ -84,7 +116,7 @@ export default function VerticalTabs() {
           Frontend Developer <a href="#">@ Gurung Tech</a>
         </p>
         <p>Mar 2021 - Jan 2022</p>
-        <ul>
+        <ul className="px-0">
           <li className="my-3">
             Experienced Frontend Developer with knowledge of modern web
             development technologies including React, HTML, CSS, and JavaScript
@@ -102,13 +134,71 @@ export default function VerticalTabs() {
         </ul>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Cloud Factory
-      </TabPanel>
+        <p>
+          Team Lead | Data Specialist <a href="#">@ Cloud Factory</a>
+        </p>
+        <p>Jan 2021 – Jan 2022</p>
+        <ul className="px-0">
+          <li className="my-3">
+            Led a team as a Team Captain in preparing data on Levee Annotation
+            for training AI to prevent natural disasters by finding
+            disaster-prone areas in Japan
+          </li>
+          <li className="my-3">
+            Developed team management skills, scheduling, and quality assurance
+            expertise during the project
+          </li>
+          <li className="my-3">
+            Prepared quality data for Levee annotation in areas of Japan to
+            train AI as a Data Specialist.
+          </li>
+        </ul>
+      </TabPanel>{" "}
       <TabPanel value={value} index={2}>
-        Terakoya
+        <p>
+          Web Developer <a href="#">@ Terakoya Academia</a>
+        </p>
+        <p>Jul 2020 - Dec 2020</p>
+        <ul className="px-0">
+          <li className="my-3">
+            As an intern at Terakoya Academia Inc., contributed to web
+            development projects, including the Report Manager application for
+            Suprieve Inc
+          </li>
+          <li className="my-3">
+            Developed landing pages for YouMe School and Terakoya Academia,
+            working closely with clients to understand their requirements and
+            improve user engagement and experience
+          </li>
+          <li className="my-3">
+            Utilized various technologies such as Node.js, EJS, CSS, and
+            Bootstrap to develop and maintain web app features, implement
+            responsive design, and ensure easy navigation. Additionally,
+            utilized version control tools such as GitHub and ClickUp for
+            project management.
+          </li>
+        </ul>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Suprieve
+        <p>
+          Research Intern <a href="#">@ Suprieve Inc.</a>
+        </p>
+        <p>Jul 2020 - Jul 2020</p>
+        <ul className="px-0">
+          <li className="my-3">
+            Developed an automated report management system for the company's
+            internal use using Node JS
+          </li>
+          <li className="my-3">
+            Utilized Google APIs to fetch schedules and reports from Google
+            Calendar and store them in Google Sheets
+          </li>
+          <li className="my-3">
+            Implemented Cron job to automate the task of generating reports
+            every night, while communicating with multi-disciplinary teams of
+            engineers, designers, producers, and clients on a daily basis.
+          </li>
+        </ul>
       </TabPanel>
       {/* <TabPanel value={value} index={4}>
         Item Five
