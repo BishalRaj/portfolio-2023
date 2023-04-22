@@ -119,7 +119,8 @@ export default function VerticalTabs() {
         <ul className="px-0">
           <li className="my-3">
             Experienced Frontend Developer with knowledge of modern web
-            development technologies including React, HTML, CSS, and JavaScript
+            development technologies including React, HTML, CSS, and JavaScript{" "}
+            <i>(ES6 | React | Redux)</i>
           </li>
           <li className="my-3">
             Proven ability to collaborate with multi-disciplinary teams and
