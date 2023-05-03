@@ -23,3 +23,12 @@
     }
   }
 }
+
+.project-link {
+  a {
+    color: sv.$light-slate;
+    &:hover {
+      color: sv.$green;
+    }
+  }
+}

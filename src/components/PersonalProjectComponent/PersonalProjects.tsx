@@ -1,36 +1,37 @@
 import React from "react";
 import "./style.scss";
 import { Col, Row } from "react-bootstrap";
-import { AiOutlineFolder } from "react-icons/ai";
+import { CiFolderOn } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
 const PersonalProjects = () => {
   var projects = [];
   for (let index = 0; index < 14; index++) {
     projects.push(
-      <Col lg={4} className="bg-danger  px-1 py-2">
-        <div className="project-card p-4 mx-auto bg-light ">
+      // <Col lg={4} className="bg-danger  px-1 py-2">
+      <Col lg={4} className="  px-1 py-2">
+        <div className="project-card p-4 mx-auto bg-light-navy">
           <Row className="h-100 d-flex justify-content-between">
             <Col lg={12} className="d-flex height-fit-content">
               <div className="w-50">
                 <a href="/">
-                  <AiOutlineFolder size={45} />
+                  <CiFolderOn size={45} className="color-custom-green" />
                 </a>
               </div>
-              <div className="text-right w-50 d-flex align-items-end py-2 justify-content-end">
-                <a href="/">
+              <div className="text-right w-50 d-flex align-items-end py-2 justify-content-end project-link">
+                <a href="/" className="ml-1">
                   <FiGithub size={20} />
                 </a>
-                <a href="/">
+                <a href="/" className="ml-1">
                   <FiGithub size={20} />
                 </a>
               </div>
             </Col>
             <Col lg={12}>
-              <h2>title</h2>
+              <h5 className="text-light">Title</h5>
               <p>definition</p>
             </Col>
-            <Col lg={12} className="project-skills">
+            <Col lg={12} className="project-skills height-fit-content">
               <ul>
                 <li>react.js</li>
                 <li>react.js</li>
