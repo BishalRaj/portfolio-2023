@@ -10,3 +10,16 @@
   width: 325px !important;
   border-radius: 2px;
 }
+
+.project-skills {
+  width: fit-content !important;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline;
+      margin-right: 5%;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Col, Row } from "react-bootstrap";
+import { AiOutlineFolder } from "react-icons/ai";
 
 const PersonalProjects = () => {
   var projects = [];
@@ -9,7 +10,11 @@ const PersonalProjects = () => {
       <Col lg={4} className="bg-danger  px-1 py-2">
         <div className="project-card p-4 mx-auto bg-light ">
           <Row className="h-100 d-flex justify-content-between">
-            <Col lg={6}>Github</Col>
+            <Col lg={6}>
+              <a href="/">
+                <AiOutlineFolder size={45} />
+              </a>
+            </Col>
             <Col lg={6} className="text-right">
               link
             </Col>
@@ -17,9 +22,12 @@ const PersonalProjects = () => {
               <h2>title</h2>
               <p>definition</p>
             </Col>
-            <Col lg={12}>
-              <span style={{ marginRight: "10px" }}>React.js</span>
-              <span style={{ marginRight: "10px" }}>React.js</span>
+            <Col lg={12} className="project-skills">
+              <ul>
+                <li>react.js</li>
+                <li>react.js</li>
+                <li>react.js</li>
+              </ul>
             </Col>
           </Row>
         </div>
