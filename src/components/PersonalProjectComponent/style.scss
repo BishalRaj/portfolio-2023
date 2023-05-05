@@ -13,6 +13,8 @@
 
 .project-skills {
   width: fit-content !important;
+  // position: relative;
+  // bottom: -15% !important;
   ul {
     margin: 0;
     padding: 0;
@@ -20,11 +22,29 @@
       list-style: none;
       display: inline;
       margin-right: 5%;
+      font-family: sv.$font-mono;
+      font-size: small;
+      color: sv.$slate;
     }
   }
 }
 
 .project-link {
+  text-decoration: none;
+  &:hover {
+    position: relative;
+    top: -5px !important;
+    transition: 10s !important;
+  }
+
+  &:hover {
+    .project-title {
+      color: sv.$green !important;
+    }
+  }
+}
+
+.repo-link {
   a {
     color: sv.$light-slate;
     &:hover {
