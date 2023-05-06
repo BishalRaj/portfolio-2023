@@ -1,5 +1,9 @@
 @use "../public/scss/static" as sv;
 
+* {
+  font-family: sv.$font-sans;
+}
+
 .main-container {
   padding: 0 !important;
   // background-color: sv.$green ;
@@ -32,4 +36,71 @@
 }
 .ml-1 {
   margin-left: 1rem;
+}
+
+.font-mono {
+  font-family: sv.$font-mono !important;
+}
+
+.font-sans {
+  font-family: sv.$font-sans !important;
+}
+
+.section-intro {
+  height: 90vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+}
+
+h2,
+h3 {
+  display: block;
+  font-size: 4em !important;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bolder !important;
+  color: sv.$lightest-slate;
+}
+
+h3,
+.color-slate {
+  color: sv.$slate !important;
+}
+
+h1 {
+  margin: 0px 0px 30px 4px;
+  color: sv.$green;
+  display: block;
+  font-size: 1em !important;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: sv.$font-mono !important;
+}
+
+.glow-button {
+  background: none;
+  border-radius: 4px;
+  border-color: sv.$green;
+  color: sv.$green;
+  font-family: sv.$font-mono;
+  width: fit-content !important;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }

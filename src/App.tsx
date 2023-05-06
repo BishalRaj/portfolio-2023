@@ -6,6 +6,8 @@ import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLef
 import "./style.scss";
 import Work from "./components/WorkComponent/Work";
 import PersonalProjects from "./components/PersonalProjectComponent/PersonalProjects";
+import Contact from "./components/ContactComponent/Contact";
+import Footer from "./components/FooterComponent/Footer";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
       <Work />
 
       <PersonalProjects />
+      <Contact />
+      <Footer />
     </Container>
   );
 }

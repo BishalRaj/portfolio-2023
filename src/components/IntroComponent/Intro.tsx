@@ -22,7 +22,7 @@ const Intro = () => {
             accessible, human-centered products.
           </p>
         </div>
-        <button className="intro-button px-4 py-3">Check My Resume!</button>
+        <button className="glow-button px-4 py-3">Check My Resume!</button>
       </Col>
     </Row>
   );
