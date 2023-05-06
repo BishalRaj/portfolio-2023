@@ -91,12 +91,17 @@ h1 {
 }
 
 .glow-button {
-  background: none;
+  background: sv.$navy-blue-dark;
+  border: 1px solid sv.$green;
   border-radius: 4px;
-  border-color: sv.$green;
   color: sv.$green;
   font-family: sv.$font-mono;
   width: fit-content !important;
+  text-decoration: none;
+
+  &:hover {
+    color: sv.$green;
+  }
 }
 
 :-webkit-any(article, aside, nav, section) h1 {

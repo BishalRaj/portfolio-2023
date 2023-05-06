@@ -14,7 +14,12 @@ const Contact = () => {
         try my best to get back to you!
       </p>
 
-      <button className="glow-button px-4 py-3 my-5">Say Hello</button>
+      <a
+        href="mailto:shakya.bishalraj@gmail.com"
+        className="glow-button px-4 py-3 my-5"
+      >
+        Say Hello
+      </a>
     </section>
   );
 };
