@@ -1,14 +1,38 @@
-import { Nav, Navbar as NavbarBs } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Navbar as NavbarBs } from "react-bootstrap";
 import navItems from "../../data/nav.json";
 import firstLetterUpperCase from "../../utilities/firstLetterUpperCase";
 import "./style.scss";
+import { useEffect, useState } from "react";
+// import { useRef } from "react";
+// import { useIsVisible } from "../../utilities/useIsVisible";
 // import NavRef from "../../ref/NavRef";
 
 const NavBar = ({ onNavClick, navRef }: any) => {
   const { about, experience, work, contact } = navRef;
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      setPrevScrollPos(currentScrollPos);
+      setVisible(visible);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <NavbarBs className="px-5 py-3 nav-bar text-light shadow overflow-hidden">
+    <NavbarBs
+      className={`px-5 py-3 nav-bar text-light shadow overflow-hidden fixed-top ${
+        visible ? "visible" : "hidden"
+      } `}
+    >
       Bishal
       <ul className="ms-auto my-auto nav-list">
         {navItems.map((item, index) => (

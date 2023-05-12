@@ -2,11 +2,19 @@
 .nav-bar {
   background-color: sv.$navy-blue-dark;
   height: 75px;
+  display: block;
+  position: inherit;
+}
+.visible {
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
 }
 
-// .nav-text {
-
-// }
+.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  pointer-events: none;
+}
 
 #logo {
   color: sv.$green !important;
