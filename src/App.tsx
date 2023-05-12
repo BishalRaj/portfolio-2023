@@ -8,32 +8,50 @@ import Work from "./components/WorkComponent/Work";
 import PersonalProjects from "./components/PersonalProjectComponent/PersonalProjects";
 import Contact from "./components/ContactComponent/Contact";
 import Footer from "./components/FooterComponent/Footer";
-
+import NavRef from "./ref/NavRef";
+import { useRef } from "react";
 function App() {
+  const about = useRef(null);
+  const experience = useRef(null);
+  const work = useRef(null);
+  const contact = useRef(null);
+
+  const onNavClick = (stateRef: any) => {
+    window.scrollTo({
+      top: stateRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <Container fluid className="main-container">
       {/* Floating Nav Left */}
       <SideFloatingLeft />
-
       {/* Section NavBar */}
-      <NavBar />
-
+      <NavBar
+        onNavClick={onNavClick}
+        navRef={{ about, experience, work, contact }}
+      />
       {/* Section Intro */}
-      <Intro />
-
-      {/* <div className="w-100 bg-white">.</div> */}
+      <section>
+        <Intro />
+      </section>
 
       {/* Section About */}
-      <About />
-
-      {/* <div className="w-100 bg-white">.</div> */}
+      <section ref={about}>
+        <About />
+      </section>
 
       {/* Work History */}
+      <section ref={experience}>
+        <Work />
+      </section>
+      <section ref={work}>
+        <PersonalProjects />
+      </section>
+      <section ref={contact}>
+        <Contact />
+      </section>
 
-      <Work />
-
-      <PersonalProjects />
-      <Contact />
       <Footer />
     </Container>
   );

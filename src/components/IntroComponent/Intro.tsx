@@ -4,7 +4,7 @@ import "./style.scss";
 
 const Intro = () => {
   return (
-    <Row className="justify-content-md-center section-intro">
+    <Row className="justify-content-md-center section-intro" id="intro">
       <Col lg={8} className="d-flex flex-column justify-content-center">
         <div>
           <h1>Hi, My name is</h1>

@@ -1,9 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./style.scss";
-const About = () => {
+const About = ({ ref }: any) => {
   return (
-    <Row className=" d-flex justify-content-center align-items-center section-about">
+    <Row
+      className=" d-flex justify-content-center align-items-center section-about"
+      id="about"
+      ref={ref}
+    >
       <Col lg={12}>
         <Row className="d-flex justify-content-center px-5">
           <Col lg={5} className="about-sans px-5">

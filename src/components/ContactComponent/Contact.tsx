@@ -1,9 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./style.scss";
-const Contact = () => {
+const Contact = ({ ref }: any) => {
   return (
-    <section className="contact text-center d-flex align-items-center justify-content-center flex-column">
+    <div
+      className="contact text-center d-flex align-items-center justify-content-center flex-column"
+      id="contact"
+      ref={ref}
+    >
       <h1>What's Next?</h1>
 
       <h2 className="my-3">Get In Touch</h2>
@@ -20,7 +24,7 @@ const Contact = () => {
       >
         Say Hello
       </a>
-    </section>
+    </div>
   );
 };
 

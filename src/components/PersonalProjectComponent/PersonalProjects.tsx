@@ -1,12 +1,11 @@
-import React from "react";
-import "./style.scss";
 import { Col, Row } from "react-bootstrap";
 import { CiFolderOn } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
-import ProjectData from "../../data/projects.json";
 import { Link } from "react-router-dom";
+import ProjectData from "../../data/projects.json";
+import "./style.scss";
 
-const PersonalProjects = () => {
+const PersonalProjects = ({ ref }: any) => {
   // var projects = [];
   // for (let index = 0; index < 5; index++) {
   //   projects.push(
@@ -48,7 +47,7 @@ const PersonalProjects = () => {
 
   var projects = ProjectData.map((data) => {
     return (
-      <Col lg={4} className="  px-1 py-2">
+      <Col lg={4} className="  px-1 py-2" id="personalProject">
         <Link to={"#"} className="project-link">
           <div className="project-card p-4 mx-auto bg-light-navy">
             <Row className="h-100 d-flex justify-content-between">
@@ -90,7 +89,10 @@ const PersonalProjects = () => {
   });
 
   return (
-    <Row className="section-personal-project mx-auto d-flex justify-content-center">
+    <Row
+      ref={ref}
+      className="section-personal-project mx-auto d-flex justify-content-center"
+    >
       <div className="w-100 text-center">
         <p>Other Noteworthy Projects</p>
         <h1>View Archive</h1>

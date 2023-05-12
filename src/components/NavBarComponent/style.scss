@@ -4,13 +4,9 @@
   height: 75px;
 }
 
-.nav-text {
-  font-family: sv.$font-mono !important;
-  font-size: 13px !important;
-  span {
-    color: sv.$green;
-  }
-}
+// .nav-text {
+
+// }
 
 #logo {
   color: sv.$green !important;
@@ -25,4 +21,24 @@
 }
 
 .logo-letter {
+}
+
+.nav-list {
+  list-style: none;
+
+  li {
+    cursor: pointer;
+    float: left;
+    // font-weight: 900;
+    font-family: sv.$font-mono !important;
+    font-size: 13px !important;
+    color: sv.$light-slate;
+    span {
+      color: sv.$green;
+    }
+
+    &:hover {
+      color: sv.$green !important;
+    }
+  }
 }
