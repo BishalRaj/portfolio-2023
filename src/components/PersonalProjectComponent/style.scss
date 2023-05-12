@@ -1,30 +1,37 @@
 @use "../../../public/scss/static" as sv;
 
+/* Define variables */
+$font-mono: sv.$font-mono;
+$slate: sv.$slate;
+$light-slate: sv.$light-slate;
+$green: sv.$green;
+
 .section-personal-project {
-  min-height: 100vh !important;
-  color: black !important ;
+  min-height: 100vh;
+  color: black;
   width: 67%;
 }
+
 .project-card {
-  height: 325px !important;
-  width: 325px !important;
+  height: 325px;
+  width: 325px;
   border-radius: 2px;
 }
 
 .project-skills {
-  width: fit-content !important;
-  // position: relative;
-  // bottom: -15% !important;
+  width: max-content;
+
   ul {
     margin: 0;
     padding: 0;
+
     li {
       list-style: none;
       display: inline;
       margin-right: 5%;
-      font-family: sv.$font-mono;
+      font-family: $font-mono;
       font-size: small;
-      color: sv.$slate;
+      color: $slate;
     }
   }
 }
@@ -38,7 +45,7 @@
     top: -5px;
 
     .project-title {
-      color: sv.$green;
+      color: $green !important;
     }
   }
 
@@ -47,11 +54,10 @@
   top: 0;
 }
 
-.repo-link {
-  a {
-    color: sv.$light-slate;
-    &:hover {
-      color: sv.$green;
-    }
+.repo-link a {
+  color: $light-slate;
+
+  &:hover {
+    color: $green;
   }
 }
