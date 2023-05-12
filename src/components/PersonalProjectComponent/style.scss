@@ -31,17 +31,20 @@
 
 .project-link {
   text-decoration: none;
-  &:hover {
-    position: relative;
-    top: -5px !important;
-    transition: 10s !important;
-  }
+  transition: top 0.2s;
 
   &:hover {
+    position: relative;
+    top: -5px;
+
     .project-title {
-      color: sv.$green !important;
+      color: sv.$green;
     }
   }
+
+  /* Set initial position */
+  position: relative;
+  top: 0;
 }
 
 .repo-link {
