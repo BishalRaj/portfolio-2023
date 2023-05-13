@@ -4,6 +4,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./style.scss";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -41,7 +42,7 @@ function a11yProps(index: number) {
 
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
-
+  const matches = useMediaQuery("(min-width:428px)");
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -63,13 +64,8 @@ export default function VerticalTabs() {
         onChange={handleChange}
         aria-label="Vertical tabs"
         sx={{
-          // borderRight: 2,
-          // borderColor: "#495670",
           minWidth: "150px",
           maxWidth: "150px",
-          // textAlign: "left",
-          // alignItems: "end",
-          // color: "white",
         }}
       >
         <Tab
@@ -108,9 +104,6 @@ export default function VerticalTabs() {
           label="Suprieve"
           {...a11yProps(3)}
         />
-        {/* <Tab className="tab" label="Item Five" {...a11yProps(4)} />
-        <Tab className="tab" label="Item Six" {...a11yProps(5)} />
-        <Tab className="tab" label="Item Seven" {...a11yProps(6)} /> */}
       </Tabs>
       <TabPanel value={value} index={0}>
         <p>

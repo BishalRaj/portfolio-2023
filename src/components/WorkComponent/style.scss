@@ -1,7 +1,7 @@
 @use "../../../public/scss/static" as sv;
 
 .section-work {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 .tabpanel {
@@ -48,5 +48,11 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .tabs {
+    font-size: small !important;
+    min-width: 100px !important;
   }
 }
