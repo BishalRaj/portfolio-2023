@@ -52,7 +52,8 @@ export default function VerticalTabs() {
         flexGrow: 1,
         // bgcolor: "background.paper",
         display: "flex",
-        // height: 224,
+        // height: "fit-content",
+        minHeight: "300px",
       }}
     >
       <Tabs
@@ -60,9 +61,9 @@ export default function VerticalTabs() {
         variant="scrollable"
         value={value}
         onChange={handleChange}
-        aria-label="Vertical tabs example"
+        aria-label="Vertical tabs"
         sx={{
-          // borderLeft: 2,
+          // borderRight: 2,
           // borderColor: "#495670",
           minWidth: "150px",
           maxWidth: "150px",
@@ -74,7 +75,7 @@ export default function VerticalTabs() {
         <Tab
           className="tab"
           sx={{
-            borderLeft: 2,
+            borderRight: 2,
             borderColor: "#495670",
           }}
           label="Gurung Tech"
@@ -83,7 +84,7 @@ export default function VerticalTabs() {
         <Tab
           className="tab"
           sx={{
-            borderLeft: 2,
+            borderRight: 2,
             borderColor: "#495670",
           }}
           label="Cloud Factory"
@@ -92,7 +93,7 @@ export default function VerticalTabs() {
         <Tab
           className="tab"
           sx={{
-            borderLeft: 2,
+            borderRight: 2,
             borderColor: "#495670",
           }}
           label="Terakoya"
@@ -101,7 +102,7 @@ export default function VerticalTabs() {
         <Tab
           className="tab"
           sx={{
-            borderLeft: 2,
+            borderRight: 2,
             borderColor: "#495670",
           }}
           label="Suprieve"

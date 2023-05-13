@@ -9,9 +9,12 @@ const About = ({ ref }: any) => {
       ref={ref}
     >
       <Col lg={12}>
-        <Row className="d-flex justify-content-center px-5">
-          <Col lg={5} className="about-sans px-5">
-            <h1>About Me</h1>
+        <Row className="d-flex justify-content-center about-sans mx-auto">
+          <Col lg={5} md={12} sm={12}>
+            <p className="section-title">
+              <span>01.</span> About Me
+              <span className="horizontal-line"></span>
+            </p>
 
             <p>
               I am a forward-thinking software engineer with 2 years of

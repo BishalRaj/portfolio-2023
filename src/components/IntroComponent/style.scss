@@ -7,6 +7,20 @@
 .section-intro {
   padding-top: 75px;
 }
+.intro-description {
+  width: 50%;
+}
+@media only screen and (max-width: 428px) {
+  .section-intro {
+    padding-top: 150px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .intro-description {
+    width: 100%;
+  }
+}
 
 // h1,
 // h2,

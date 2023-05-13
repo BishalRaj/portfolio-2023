@@ -6,7 +6,7 @@ $img-border-radius: 5px;
 $left-right: 20px;
 $transition-time: 0.25s;
 .section-about {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 .about-img-div {
@@ -117,5 +117,28 @@ p {
       top: 0;
       left: 0;
     }
+  }
+}
+
+h2 {
+  font-size: 50px !important;
+}
+.about-sans {
+  max-width: 84%;
+}
+
+@media only screen and (max-width: 428px) {
+  .about-sans {
+    padding: 0px !important;
+  }
+  .about-img-div {
+    width: 250px !important;
+    &::after {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .section-about {
+    margin-bottom: 50%;
   }
 }

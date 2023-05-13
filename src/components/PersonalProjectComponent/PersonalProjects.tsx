@@ -94,7 +94,7 @@ const PersonalProjects = ({ ref }: any) => {
       className="section-personal-project mx-auto d-flex justify-content-center"
     >
       <div className="w-100 text-center">
-        <p>Other Noteworthy Projects</p>
+        <p className="section-title mx-auto">Other Noteworthy Projects</p>
         <h1>View Archive</h1>
       </div>
       {projects}
