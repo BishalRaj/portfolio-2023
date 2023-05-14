@@ -3,7 +3,7 @@ import "./style.scss";
 import social from "../../data/social";
 const SideFloatingLeft = () => {
   const socialIcons = social.map((x, key) => (
-    <a href={x?.link} key={key * 13}>
+    <a href={x?.link} target="_blank" key={key * 13}>
       <li className="my-3">{x?.icon}</li>
     </a>
   ));

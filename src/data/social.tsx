@@ -1,19 +1,19 @@
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 const social = [
   {
-    link: "github",
+    link: "https://github.com/BishalRaj",
     icon: <FiGithub />,
   },
   {
-    link: "github",
+    link: "https://github.com/BishalRaj",
     icon: <FiGithub />,
   },
   {
-    link: "linkedin",
+    link: "https://www.linkedin.com/in/bishal-shakya/",
     icon: <FiLinkedin />,
   },
   {
-    link: "insta",
+    link: "https://www.instagram.com/bishal.shakya.125/",
     icon: <FiInstagram />,
   },
   ,
