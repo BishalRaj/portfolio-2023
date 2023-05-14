@@ -61,3 +61,9 @@ $green: sv.$green;
     color: $green;
   }
 }
+
+@media only screen and (max-width: 428px) {
+  .section-personal-project {
+    width: auto;
+  }
+}

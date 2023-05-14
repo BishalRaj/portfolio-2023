@@ -9,12 +9,24 @@ import PersonalProjects from "./components/PersonalProjectComponent/PersonalProj
 import Contact from "./components/ContactComponent/Contact";
 import Footer from "./components/FooterComponent/Footer";
 import NavRef from "./ref/NavRef";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
 function App() {
   const about = useRef(null);
   const experience = useRef(null);
   const work = useRef(null);
   const contact = useRef(null);
+
+  const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const onNavClick = (stateRef: any) => {
     window.scrollTo({
@@ -30,6 +42,7 @@ function App() {
       <NavBar
         onNavClick={onNavClick}
         navRef={{ about, experience, work, contact }}
+        screenSize={screenSize}
       />
       {/* Section Intro */}
       <section>
@@ -43,13 +56,13 @@ function App() {
 
       {/* Work History */}
       <section ref={experience}>
-        <Work />
+        <Work screenSize={screenSize} />
       </section>
       <section ref={work}>
-        <PersonalProjects />
+        <PersonalProjects screenSize={screenSize} />
       </section>
       <section ref={contact}>
-        <Contact />
+        <Contact screenSize={screenSize} />
       </section>
 
       <Footer />

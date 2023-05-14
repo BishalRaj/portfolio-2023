@@ -5,51 +5,17 @@ import { Link } from "react-router-dom";
 import ProjectData from "../../data/projects.json";
 import "./style.scss";
 
-const PersonalProjects = ({ ref }: any) => {
-  // var projects = [];
-  // for (let index = 0; index < 5; index++) {
-  //   projects.push(
-  //     // <Col lg={4} className="bg-danger  px-1 py-2">
-  //     <Col lg={4} className="  px-1 py-2">
-  //       <div className="project-card p-4 mx-auto bg-light-navy">
-  //         <Row className="h-100 d-flex justify-content-between">
-  //           <Col lg={12} className="d-flex height-fit-content">
-  //             <div className="w-50">
-  //               <a href="/">
-  //                 <CiFolderOn size={45} className="color-custom-green" />
-  //               </a>
-  //             </div>
-  //             <div className="text-right w-50 d-flex align-items-end py-2 justify-content-end project-link">
-  //               <a href="/" className="ml-1">
-  //                 <FiGithub size={20} />
-  //               </a>
-  //               <a href="/" className="ml-1">
-  //                 <FiGithub size={20} />
-  //               </a>
-  //             </div>
-  //           </Col>
-  //           <Col lg={12}>
-  //             <h5 className="text-light">Title</h5>
-  //             <p></p>
-  //           </Col>
-  //           <Col lg={12} className="project-skills height-fit-content">
-  //             <ul>
-  //               <li>react.js</li>
-  //               <li>react.js</li>
-  //               <li>react.js</li>
-  //             </ul>
-  //           </Col>
-  //         </Row>
-  //       </div>
-  //     </Col>
-  //   );
-  // }
-
+const PersonalProjects = ({ screenSize }: any) => {
   var projects = ProjectData.map((data) => {
     return (
-      <Col lg={4} className="  px-1 py-2" id="personalProject">
+      <Col
+        lg={4}
+        sm={12}
+        className="px-1 py-2 mx-auto personalProject"
+        id="personalProject"
+      >
         <Link to={"#"} className="project-link">
-          <div className="project-card p-4 mx-auto bg-light-navy">
+          <div className={`project-card mx-auto bg-light-navy p-4  `}>
             <Row className="h-100 d-flex justify-content-between">
               {/* Column links ******************************************************************************** */}
               <Col lg={12} className="d-flex height-fit-content">
@@ -89,10 +55,7 @@ const PersonalProjects = ({ ref }: any) => {
   });
 
   return (
-    <Row
-      ref={ref}
-      className="section-personal-project mx-auto d-flex justify-content-center"
-    >
+    <Row className="section-personal-project mx-auto d-flex justify-content-center">
       <div className="w-100 text-center">
         <p className="section-title mx-auto">Other Noteworthy Projects</p>
         <h1>View Archive</h1>

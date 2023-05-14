@@ -128,17 +128,24 @@ h2 {
 }
 
 @media only screen and (max-width: 428px) {
-  .about-sans {
-    padding: 0px !important;
+  .about-sans,
+  .section-about {
+    margin: 0;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
+
   .about-img-div {
     width: 250px !important;
+    margin: auto;
     &::after {
       width: 250px;
       height: 250px;
     }
   }
   .section-about {
-    margin-bottom: 50%;
+    margin-bottom: 15%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }
