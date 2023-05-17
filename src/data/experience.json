@@ -1,0 +1,50 @@
+[
+    {
+        "company": "Gurung Tech",
+        "nav": "Gurung Tech",
+        "position": "Frontend Developer",
+        "start": "Mar 2021",
+        "end": "Jan 2022",
+        "points": [
+            "Experienced Frontend Developer with knowledge of modern web development technologies including React, HTML, CSS, and JavaScript <i>(ES6 | React | Redux)</i>",
+            "Proven ability to collaborate with multi-disciplinary teams and translate design into functional and visually appealing web applications",
+            "Knowledgeable in implementing best practices for web design, including accessibility and SEO optimization, and continuously monitors and optimizes website performance."
+        ]
+    },
+    {
+        "company": "Cloud Factory",
+        "nav": "Cloud Factory",
+        "position": "Team Lead | Data Specialist",
+        "start": "Jan 2021",
+        "end": "Jan 2022",
+        "points": [
+            "Led a team as a Team Captain in preparing data on Levee Annotation for training AI to prevent natural disasters by finding disaster-prone areas in Japan",
+            "Developed team management skills, scheduling, and quality assurance expertise during the project",
+            " Prepared quality data for Levee annotation in areas of Japan to train AI as a Data Specialist."
+        ]
+    },
+    {
+        "company": "Terakoya Academia",
+        "nav": "Terakoya",
+        "position": "Web Developer",
+        "start": "Jul 2020",
+        "end": "Dec 2020",
+        "points": [
+            "As an intern at Terakoya Academia Inc., contributed to web development projects, including the Report Manager application for Suprieve Inc",
+            "Developed landing pages for YouMe School and Terakoya Academia, working closely with clients to understand their requirements and improve user engagement and experience",
+            " Utilized various technologies such as Node.js, EJS, CSS, and Bootstrap to develop and maintain web app features, implement responsive design, and ensure easy navigation. Additionally, utilized version control tools such as GitHub and ClickUp for project management."
+        ]
+    },
+    {
+        "company": "Suprieve Inc.",
+        "nav": "Suprieve",
+        "position": "Research Intern",
+        "start": "Jul 2020",
+        "end": "Jul 2020",
+        "points": [
+            "Developed an automated report management system for the company's internal use using Node JS",
+            "Utilized Google APIs to fetch schedules and reports from Google Calendar and store them in Google Sheets",
+            "Implemented Cron job to automate the task of generating reports every night, while communicating with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis."
+        ]
+    }
+]
