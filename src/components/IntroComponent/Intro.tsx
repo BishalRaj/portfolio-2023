@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./style.scss";
-
+import { Link } from "react-router-dom";
+import cv from "../../assets/Resume-Bishal-Shakya.pdf";
 const Intro = () => {
   return (
     <Row className="justify-content-md-center section-intro" id="intro">
@@ -22,7 +23,16 @@ const Intro = () => {
             accessible, human-centered products.
           </p>
         </div>
-        <button className="glow-button px-4 py-3">Check My Resume!</button>
+        <Link
+          to={cv}
+          target="_blank"
+          className="glow-button px-4 py-3"
+          download
+        >
+          Check My Resume!
+        </Link>
+
+        {/* <button className="glow-button px-4 py-3">Check My Resume!</button> */}
       </Col>
     </Row>
   );
