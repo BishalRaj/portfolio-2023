@@ -27,7 +27,7 @@ const Intro = () => {
           to={cv}
           target="_blank"
           className="glow-button px-4 py-3"
-          download
+          // download
         >
           Check My Resume!
         </Link>
