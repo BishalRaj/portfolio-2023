@@ -1,17 +1,19 @@
 import { Container } from "react-bootstrap";
 import About from "./components/AboutComponent/About";
-import Intro from "./components/IntroComponent/Intro";
-import NavBar from "./components/NavBarComponent/NavBar";
-import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
-import "./style.scss";
-import Work from "./components/WorkComponent/Work";
-import PersonalProjects from "./components/PersonalProjectComponent/PersonalProjects";
 import Contact from "./components/ContactComponent/Contact";
 import Footer from "./components/FooterComponent/Footer";
-import NavRef from "./ref/NavRef";
+import Intro from "./components/IntroComponent/Intro";
+import NavBar from "./components/NavBarComponent/NavBar";
+import PersonalProjects from "./components/PersonalProjectComponent/PersonalProjects";
+import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
+import Work from "./components/WorkComponent/Work";
+import "./style.scss";
+// import NavRef from "./ref/NavRef";
 import { useEffect, useRef, useState } from "react";
+import FeaturedProject from "./components/FeaturedProjectComponent/FeaturedProject";
 
 function App() {
+  const intro = useRef(null);
   const about = useRef(null);
   const experience = useRef(null);
   const work = useRef(null);
@@ -41,11 +43,11 @@ function App() {
       {/* Section NavBar */}
       <NavBar
         onNavClick={onNavClick}
-        navRef={{ about, experience, work, contact }}
+        navRef={{ intro, about, experience, work, contact }}
         screenSize={screenSize}
       />
       {/* Section Intro */}
-      <section>
+      <section ref={intro}>
         <Intro />
       </section>
 
@@ -58,6 +60,11 @@ function App() {
       <section ref={experience}>
         <Work screenSize={screenSize} />
       </section>
+
+      <section ref={experience}>
+        <FeaturedProject screenSize={screenSize} />
+      </section>
+
       <section ref={work}>
         <PersonalProjects screenSize={screenSize} />
       </section>

@@ -6,7 +6,7 @@ import firstLetterUpperCase from "../../utilities/firstLetterUpperCase";
 import "./style.scss";
 
 const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
-  const { about, experience, work, contact } = navRef;
+  const { intro, about, experience, work, contact } = navRef;
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
 
@@ -31,7 +31,7 @@ const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
         visible ? "visible" : "hidden"
       } `}
     >
-      Bishal
+      <span onClick={() => onNavClick(intro)}>Bishal</span>
       <ul className="ms-auto my-auto nav-list">
         {screenSize > 428 ? (
           navItems.map((item, index) => (

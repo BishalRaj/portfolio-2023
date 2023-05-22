@@ -1,0 +1,57 @@
+@use "../../../public/scss/static" as sv;
+
+.project-items {
+  background: none !important;
+  background-color: transparent !important;
+  height: fit-content !important;
+  z-index: 1 !important;
+
+  h1 {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  ul {
+    li {
+      margin-left: 5%;
+    }
+  }
+}
+.featured-img-div {
+  img {
+    position: absolute;
+    height: auto;
+    width: calc(50% + 50px);
+    object-fit: cover;
+  }
+}
+
+.ind-featured {
+  height: 350px;
+  position: relative;
+
+  .img-div-left {
+    img {
+      right: 10px !important;
+    }
+  }
+}
+
+.fp-desc {
+  background-color: sv.$light-navy;
+  padding: 25px !important;
+  color: sv.$slate;
+  position: relative;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 428px) {
+  .ind-featured {
+    .featured-img-div {
+      display: none;
+    }
+  }
+}

@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
 
-const NavRef = () => {
-  const about = useRef(null);
-  const experience = useRef(null);
-  const work = useRef(null);
-  const contact = useRef(null);
+// const NavRef = () => {
+//   const intro = useRef(null);
+//   const about = useRef(null);
+//   const experience = useRef(null);
+//   const work = useRef(null);
+//   const contact = useRef(null);
 
-  return { about, experience, work, contact };
-};
+//   return { about, experience, work, contact };
+// };
 
-export default NavRef;
+// export default NavRef;

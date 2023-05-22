@@ -89,6 +89,38 @@ h3,
   color: sv.$slate !important;
 }
 
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+$img-border-radius: 5px;
+$transition-time: 0.25s;
+
+.grey-scale-img-div {
+  // background-color: sv.$green;
+  // background: sv.$green;
+  img {
+    // width: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    object-fit: cover;
+    border-radius: $img-border-radius;
+    opacity: 90%;
+    // mix-blend-mode: screen;
+    // filter: grayscale(100%) sepia(100%) hue-rotate(155deg);
+    filter: grayscale(100%) contrast(1) brightness(90%);
+  }
+  &:hover {
+    img {
+      transition: $transition-time;
+      filter: none;
+      opacity: 100%;
+
+      // mix-blend-mode: normal;
+    }
+  }
+}
 .glow-button {
   background: sv.$navy-blue-dark;
   border: 1px solid sv.$green;
@@ -115,7 +147,7 @@ h3,
   color: sv.$lightest-slate;
   width: fit-content;
   position: relative;
-
+  // background: url();
   span {
     font-weight: 500;
     font-family: sv.$font-mono !important;

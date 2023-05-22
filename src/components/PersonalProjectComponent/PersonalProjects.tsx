@@ -43,7 +43,7 @@ const PersonalProjects = ({ screenSize }: any) => {
               <Col lg={12} className="project-skills height-fit-content w-100">
                 <ul>
                   {data.technologies.map((element) => (
-                    <li>{element}</li>
+                    <li style={{ marginRight: "5%" }}>{element}</li>
                   ))}
                 </ul>
               </Col>

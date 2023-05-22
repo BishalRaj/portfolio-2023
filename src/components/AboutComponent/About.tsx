@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./style.scss";
-const About = ({ ref }: any) => {
+const About = () => {
   return (
     <Row
       className=" d-flex justify-content-center align-items-center section-about"
       id="about"
-      ref={ref}
     >
       <Col lg={12}>
         <Row className="d-flex justify-content-center about-sans mx-auto">
@@ -49,7 +48,7 @@ const About = ({ ref }: any) => {
             </p>
           </Col>
           <Col lg={3} className="my-auto">
-            <div className="about-img-div">
+            <div className="about-img-div grey-scale-img-div">
               <img src="/images/me.jpg" alt="" className="" />
             </div>
           </Col>
