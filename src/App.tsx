@@ -61,11 +61,11 @@ function App() {
         <Work screenSize={screenSize} />
       </section>
 
-      <section ref={experience}>
+      <section ref={work}>
         <FeaturedProject screenSize={screenSize} />
       </section>
 
-      <section ref={work}>
+      <section>
         <PersonalProjects screenSize={screenSize} />
       </section>
       <section ref={contact}>
