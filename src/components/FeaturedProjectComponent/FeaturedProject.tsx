@@ -14,7 +14,7 @@ const FeaturedProject = ({ screenSize }: any) => {
               className="project-items project-skills my-auto"
               style={{
                 textAlign: "left",
-                background: url(`${screenSize > 428 ? "" : ""}`),
+                // background: url(`${screenSize > 428 ? "" : ""}`),
               }}
             >
               <h1>Featured Project</h1>
