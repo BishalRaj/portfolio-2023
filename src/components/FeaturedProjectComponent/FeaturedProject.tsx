@@ -20,9 +20,12 @@ const FeaturedProject = ({ screenSize }: any) => {
               <h1>Featured Project</h1>
               <h2>Title</h2>
               <div className="fp-desc">
-                A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                iTerm, and more. Available on Visual Studio Marketplace, Package
-                Control, Atom Package Manager, and npm.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vitae magna velit. Phasellus mauris sapien, mollis ut dapibus
+                ut, porttitor vel lacus. Nam ac elementum dolor, ac laoreet
+                nisi. Vestibulum ultricies sodales elit a dapibus. Proin arcu
+                lorem, tincidunt in aliquet a, finibus sit amet enim.
+                Suspendisse efficitur eros ligula.
               </div>
               <ul>
                 <li>VS Code</li>
@@ -64,11 +67,12 @@ const FeaturedProject = ({ screenSize }: any) => {
               <h1>Featured Project</h1>
               <h2>Title</h2>
               <div className="fp-desc">
-                A web app for visualizing personalized Spotify data. View your
-                top artists, top tracks, recently played tracks, and detailed
-                audio information about each track. Create and save new
-                playlists of recommended tracks based on your existing playlists
-                and more.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vitae magna velit. Phasellus mauris sapien, mollis ut dapibus
+                ut, porttitor vel lacus. Nam ac elementum dolor, ac laoreet
+                nisi. Vestibulum ultricies sodales elit a dapibus. Proin arcu
+                lorem, tincidunt in aliquet a, finibus sit amet enim.
+                Suspendisse efficitur eros ligula.
               </div>
               <ul>
                 <li>VS Code</li>
