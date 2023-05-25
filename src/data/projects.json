@@ -11,13 +11,14 @@
         ]
     },
     {
-        "title": "Sija",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Niharika Travels",
+        "description": "A web application built for a Canadian travel agency which provides an interactive platform for users to book travel packages, view destinations, and get information about travel arrangements.",
         "link": "https://sija.vercel.app",
-        "github": "/",
+        "github": "https://github.com/BishalRaj/NiharikaTravels",
         "technologies": [
-            "Next.js",
-            "Tailwind CSS"
+            "Node.js",
+            "EJS",
+            "Bootstrap"
         ]
     },
     {

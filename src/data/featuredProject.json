@@ -1,0 +1,9 @@
+[
+    {
+        "title":"Portfolio",
+        "description":"A personal portfolio website built with Next.js and deployed on Vercel. The website showcases some of the web projects that I have worked on, and uses various APIs to display dynamic data. The website also features a dark theme, smooth animations, and a chat app.",
+        "image":"/images/featured/portfolio.png",
+        "tools":["VS Code","React","Vite"]
+
+    }
+]
