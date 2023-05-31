@@ -21,10 +21,12 @@
     }
   }
 }
+
 .featured-img-div {
+  height: 100% !important;
   img {
     position: absolute;
-    height: auto;
+    height: 100%;
     width: calc(50% + 50px);
     object-fit: cover;
   }
@@ -33,7 +35,6 @@
 .ind-featured {
   height: 350px;
   position: relative;
-
   .img-div-left {
     img {
       right: 10px !important;

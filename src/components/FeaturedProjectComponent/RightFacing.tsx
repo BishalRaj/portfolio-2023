@@ -8,10 +8,14 @@ const RightFacing = ({ data, screenSize }: any) => {
     <Row className="ind-featured">
       {screenSize > 428 ? (
         <Col lg={6} className="grey-scale-img-div featured-img-div">
-          <img
-            src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
-            alt=""
-          />
+          {image ? (
+            <img src={image} alt="" />
+          ) : (
+            <img
+              src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+              alt=""
+            />
+          )}
         </Col>
       ) : (
         ""
@@ -26,7 +30,7 @@ const RightFacing = ({ data, screenSize }: any) => {
         <div className="fp-desc">{description}</div>
         <ul>
           {tools.map((x: String) => (
-            <li>{data}</li>
+            <li>{x}</li>
           ))}
         </ul>
       </Col>

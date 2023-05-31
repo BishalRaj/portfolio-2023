@@ -30,7 +30,14 @@ const LeftFacing = ({ data, screenSize }: any) => {
           lg={6}
           className="grey-scale-img-div featured-img-div img-div-left"
         >
-          <img src={image} alt="" />
+          {image ? (
+            <img src={image} alt="" />
+          ) : (
+            <img
+              src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+              alt=""
+            />
+          )}
         </Col>
       ) : (
         ""
