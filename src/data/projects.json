@@ -2,7 +2,7 @@
 [
     {
         "title": "Sija",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
         "link": "https://sija.vercel.app",
         "github": "/",
         "technologies": [
@@ -22,13 +22,14 @@
         ]
     },
     {
-        "title": "Sija",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Sight",
+        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
         "link": "https://sija.vercel.app",
         "github": "/",
         "technologies": [
-            "Next.js",
-            "Tailwind CSS"
+            "React",
+            "Axios",
+            "ApexChart"
         ]
     },
     {
