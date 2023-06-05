@@ -1,28 +1,58 @@
 [
     {
-        "title":"Portfolio",
-        "description":"A personal portfolio website built with Next.js and deployed on Vercel. The website showcases some of the web projects that I have worked on, and uses various APIs to display dynamic data. The website also features a dark theme, smooth animations, and a chat app.",
-        "image":"/images/featured/portfolio.png",
-        "tools":["VS Code","React","Vite"]
-    }, {
-        "title":"My IT Enabler",
-        "description":"A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing. The application is built using React, a popular JavaScript library for building user interfaces, and it leverages other technologies like Bootstrap, ApexCharts, and Recharts to enhance its functionality.",
-        "image":"",
-        "tools":["React","Axios","ApexChart"]
-    }, {
-        "title":"Flash Sale Nepal",
-        "description":"A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing. The application is built using React, a popular JavaScript library for building user interfaces, and it leverages other technologies like Bootstrap, ApexCharts, and Recharts to enhance its functionality.",
-        "image":"",
-        "tools":["React","Axios","ApexChart"]
-    }, {
-        "title":"YouMe Nepal",
-        "description":"An online platform connecting students and teachers. With user registration, course listings, interactive classrooms, and assignment submission, it provides a complete learning solution. The frontend interface was meticulously developed for a visually pleasing and intuitive design, creating a seamless user experience. YouMe-School.com exemplifies the commitment to user-friendly educational platforms.",
-        "image":"/images/featured/youme.png",
-        "tools":["EJS","Node.js","Express"]
-    },  {
-        "title":"Terakoya Academia",
-        "description":"A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
-        "image":"/images/featured/terakoya.png",
-        "tools":["PHP","Laravel","Axios","Bootstrap"]
+        "title": "Portfolio",
+        "description": "A personal portfolio website built with Next.js and deployed on Vercel. The website showcases some of the web projects that I have worked on, and uses various APIs to display dynamic data. The website also features a dark theme, smooth animations, and a chat app.",
+        "image": "/images/featured/portfolio.png",
+        "link": "",
+        "tools": [
+            "VS Code",
+            "React",
+            "Vite"
+        ]
+    },
+    {
+        "title": "YouMe Nepal",
+        "description": "An online platform connecting students and teachers. With user registration, course listings, interactive classrooms, and assignment submission, it provides a complete learning solution. The frontend interface was meticulously developed for a visually pleasing and intuitive design, creating a seamless user experience. YouMe-School.com exemplifies the commitment to user-friendly educational platforms.",
+        "image": "/images/featured/youme.png",
+        "link": "",
+        "tools": [
+            "EJS",
+            "Node.js",
+            "Express"
+        ]
+    },
+    {
+        "title": "Terakoya Academia",
+        "description": "A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
+        "image": "/images/featured/terakoya.png",
+        "link": "",
+        "tools": [
+            "PHP",
+            "Laravel",
+            "Axios",
+            "Bootstrap"
+        ]
+    },
+    {
+        "title": "My IT Enabler",
+        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing. The application is built using React, a popular JavaScript library for building user interfaces, and it leverages other technologies like Bootstrap, ApexCharts, and Recharts to enhance its functionality.",
+        "image": "",
+        "link": "",
+        "tools": [
+            "React",
+            "Axios",
+            "ApexChart"
+        ]
+    },
+    {
+        "title": "Flash Sale Nepal",
+        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing. The application is built using React, a popular JavaScript library for building user interfaces, and it leverages other technologies like Bootstrap, ApexCharts, and Recharts to enhance its functionality.",
+        "image": "",
+        "link": "",
+        "tools": [
+            "React",
+            "Axios",
+            "ApexChart"
+        ]
     }
 ]

@@ -11,11 +11,11 @@ const PersonalProjects = ({ screenSize }: any) => {
       <Col
         lg={4}
         sm={12}
-        className="px-1 py-2 mx-auto personalProject"
+        className="px-1 py-2  personalProject"
         id="personalProject"
       >
         <Link to={"#"} className="project-link">
-          <div className={`project-card mx-auto bg-light-navy p-4  `}>
+          <div className={`project-card mx-auto bg-light-navy p-4`}>
             <Row className="h-100 d-flex justify-content-between">
               {/* Column links ******************************************************************************** */}
               <Col lg={12} className="d-flex height-fit-content">

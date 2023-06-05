@@ -1,16 +1,19 @@
+import React from "react";
 import { Container } from "react-bootstrap";
-import About from "./components/AboutComponent/About";
-import Contact from "./components/ContactComponent/Contact";
-import Footer from "./components/FooterComponent/Footer";
-import Intro from "./components/IntroComponent/Intro";
-import NavBar from "./components/NavBarComponent/NavBar";
-import PersonalProjects from "./components/PersonalProjectComponent/PersonalProjects";
-import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
-import Work from "./components/WorkComponent/Work";
+import { lazy, useEffect, useRef, useState } from "react";
 import "./style.scss";
+const Intro = lazy(() => import("./components/IntroComponent/Intro"));
+const About = lazy(() => import("./components/AboutComponent/About"));
+const Contact = lazy(() => import("./components/ContactComponent/Contact"));
+const PersonalProjects = lazy(
+  () => import("./components/PersonalProjectComponent/PersonalProjects")
+);
+const Work = lazy(() => import("./components/WorkComponent/Work"));
+import NavBar from "./components/NavBarComponent/NavBar";
+import SideFloatingLeft from "./components/SideFloatingComponent/SideFloatingLeft";
 // import NavRef from "./ref/NavRef";
-import { useEffect, useRef, useState } from "react";
 import FeaturedProject from "./components/FeaturedProjectComponent/FeaturedProject";
+import Footer from "./components/FooterComponent/Footer";
 
 function App() {
   const intro = useRef(null);
@@ -62,7 +65,9 @@ function App() {
       </section>
 
       <section ref={work}>
-        <FeaturedProject screenSize={screenSize} />
+        <React.Suspense fallback={<>hello</>}>
+          <FeaturedProject screenSize={screenSize} />
+        </React.Suspense>
       </section>
 
       <section>

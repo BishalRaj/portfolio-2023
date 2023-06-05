@@ -15,9 +15,22 @@
     font-size: 28px !important;
   }
 
+  // ul {
+  //   li {
+  //   }
+  // }
+
   ul {
+    margin: 0;
+    padding: 0;
+
     li {
       margin-left: 5%;
+      list-style: none;
+      display: inline;
+      font-family: sv.$font-mono;
+      font-size: small;
+      color: sv.$slate;
     }
   }
 }

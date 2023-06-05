@@ -1,16 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
-
+import { Bars } from "react-loading-icons";
 const LeftFacing = ({ data, screenSize }: any) => {
   const { title, description, tools, image } = data;
-  console.log("====================================");
-  console.log(data);
-  console.log("====================================");
+
   return (
-    <Row className="ind-featured">
+    <Row className="ind-featured w-100">
       <Col
         lg={6}
-        className="project-items project-skills my-auto"
+        className="project-items  my-auto"
         style={{
           textAlign: "left",
           // background: url(`${screenSize > 428 ? "" : ""}`),
@@ -31,12 +29,16 @@ const LeftFacing = ({ data, screenSize }: any) => {
           className="grey-scale-img-div featured-img-div img-div-left"
         >
           {image ? (
-            <img src={image} alt="" />
+            <Suspense fallback={<Bars />}>
+              <img src={image} alt="" />
+            </Suspense>
           ) : (
-            <img
-              src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
-              alt=""
-            />
+            <Suspense fallback={<Bars />}>
+              <img
+                src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+                alt=""
+              />
+            </Suspense>
           )}
         </Col>
       ) : (

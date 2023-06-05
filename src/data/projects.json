@@ -1,5 +1,27 @@
-
 [
+    {
+        "title": "Sight",
+        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
+        "link": "https://sija.vercel.app",
+        "github": "/",
+        "technologies": [
+            "React",
+            "Axios",
+            "ApexChart"
+        ]
+    },
+    {
+        "title": "Covax",
+        "description": "A Flutter-based hybrid app for locating nearby COVID-19 vaccination centers, booking appointments, and storing vaccination records, simplifying the process of getting vaccinated.",
+        "link": "",
+        "github": "/",
+        "technologies": [
+            "Flutter",
+            "MaterialUI",
+            "Node.js",
+            "Express"
+        ]
+    },
     {
         "title": "Sija",
         "description": "A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
@@ -19,27 +41,6 @@
             "Node.js",
             "EJS",
             "Bootstrap"
-        ]
-    },
-    {
-        "title": "Sight",
-        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
-        "link": "https://sija.vercel.app",
-        "github": "/",
-        "technologies": [
-            "React",
-            "Axios",
-            "ApexChart"
-        ]
-    },
-    {
-        "title": "Sija",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "link": "https://sija.vercel.app",
-        "github": "/",
-        "technologies": [
-            "Next.js",
-            "Tailwind CSS"
         ]
     }
 ]

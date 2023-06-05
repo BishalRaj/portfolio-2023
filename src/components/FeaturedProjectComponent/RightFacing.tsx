@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
+import { Bars } from "react-loading-icons";
 
 const RightFacing = ({ data, screenSize }: any) => {
   const { title, description, tools, image } = data;
@@ -9,12 +10,16 @@ const RightFacing = ({ data, screenSize }: any) => {
       {screenSize > 428 ? (
         <Col lg={6} className="grey-scale-img-div featured-img-div">
           {image ? (
-            <img src={image} alt="" />
+            <Suspense fallback={<Bars />}>
+              <img src={image} alt="" />
+            </Suspense>
           ) : (
-            <img
-              src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
-              alt=""
-            />
+            <Suspense fallback={<Bars />}>
+              <img
+                src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+                alt=""
+              />
+            </Suspense>
           )}
         </Col>
       ) : (
@@ -22,7 +27,7 @@ const RightFacing = ({ data, screenSize }: any) => {
       )}
       <Col
         lg={6}
-        className="project-items project-skills my-auto"
+        className="project-items my-auto"
         style={{ textAlign: "right" }}
       >
         <h1>Featured Project</h1>
