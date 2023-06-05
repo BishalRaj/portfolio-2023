@@ -1,7 +1,7 @@
 [
     {
         "title": "Sight",
-        "description": "A comprehensive web application designed for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
+        "description": "A comprehensive web application created for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
         "link": "https://sija.vercel.app",
         "github": "/",
         "technologies": [
@@ -24,7 +24,7 @@
     },
     {
         "title": "Sija",
-        "description": "A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
+        "description": "A dynamic and immersive platform designed to showcase the potential of a ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
         "link": "https://sija.vercel.app",
         "github": "/",
         "technologies": [

@@ -1,9 +1,5 @@
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiInstagram, FiLinkedin, FiSettings } from "react-icons/fi";
 const social = [
-  {
-    link: "https://github.com/BishalRaj",
-    icon: <FiGithub />,
-  },
   {
     link: "https://github.com/BishalRaj",
     icon: <FiGithub />,
@@ -16,7 +12,6 @@ const social = [
     link: "https://www.instagram.com/bishal.shakya.125/",
     icon: <FiInstagram />,
   },
-  ,
 ];
 
 export default social;

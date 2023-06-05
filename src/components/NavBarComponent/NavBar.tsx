@@ -31,7 +31,9 @@ const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
         visible ? "visible" : "hidden"
       } `}
     >
-      <span onClick={() => onNavClick(intro)}>Bishal</span>
+      <span onClick={() => onNavClick(intro)} style={{ cursor: "pointer" }}>
+        Bishal
+      </span>
       <ul className="ms-auto my-auto nav-list">
         {screenSize > 428 ? (
           navItems.map((item, index) => (
