@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Bars } from "react-loading-icons";
 const LeftFacing = ({ data, screenSize }: any) => {
-  const { title, description, tools, image } = data;
+  const { title, description, tools, image, link } = data;
 
   return (
     <Row className="ind-featured w-100">
@@ -30,14 +30,18 @@ const LeftFacing = ({ data, screenSize }: any) => {
         >
           {image ? (
             <Suspense fallback={<Bars />}>
-              <img src={image} alt="" />
+              <a href={link} target="_blank">
+                <img src={image} alt="" />
+              </a>
             </Suspense>
           ) : (
             <Suspense fallback={<Bars />}>
-              <img
-                src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
-                alt=""
-              />
+              <a href={link} target="_blank">
+                <img
+                  src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+                  alt=""
+                />
+              </a>
             </Suspense>
           )}
         </Col>

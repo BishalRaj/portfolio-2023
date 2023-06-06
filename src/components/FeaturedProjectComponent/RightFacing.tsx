@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Bars } from "react-loading-icons";
 
 const RightFacing = ({ data, screenSize }: any) => {
-  const { title, description, tools, image } = data;
+  const { title, description, tools, image, link } = data;
 
   return (
     <Row className="ind-featured">
@@ -11,14 +11,18 @@ const RightFacing = ({ data, screenSize }: any) => {
         <Col lg={6} className="grey-scale-img-div featured-img-div">
           {image ? (
             <Suspense fallback={<Bars />}>
-              <img src={image} alt="" />
+              <a href={link} target="_blank">
+                <img src={image} alt="" />
+              </a>
             </Suspense>
           ) : (
             <Suspense fallback={<Bars />}>
-              <img
-                src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
-                alt=""
-              />
+              <a href={link} target="_blank">
+                <img
+                  src="https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+                  alt=""
+                />
+              </a>
             </Suspense>
           )}
         </Col>
