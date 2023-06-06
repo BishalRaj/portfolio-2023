@@ -5,17 +5,20 @@ import "./style.scss";
 import project from "../../data/featuredProject.json";
 import LeftFacing from "./LeftFacing";
 import RightFacing from "./RightFacing";
+import { Fade } from "react-reveal";
 const FeaturedProject = ({ screenSize }: any) => {
   const projects: any = [];
 
   for (let index = 0; index < project.length; index++) {
     projects.push(
       <Col lg={8} sm={12} className="mx-auto my-5">
-        {index % 2 == 0 ? (
-          <LeftFacing data={project[index]} screenSize={screenSize} />
-        ) : (
-          <RightFacing data={project[index]} screenSize={screenSize} />
-        )}
+        <Fade>
+          {index % 2 == 0 ? (
+            <LeftFacing data={project[index]} screenSize={screenSize} />
+          ) : (
+            <RightFacing data={project[index]} screenSize={screenSize} />
+          )}
+        </Fade>
       </Col>
     );
   }

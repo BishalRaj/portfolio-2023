@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import "./style.scss";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import experience from "../../data/experience.json";
+import { Fade } from "react-reveal";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -95,9 +96,11 @@ export default function VerticalTabs() {
             </p>
             <ul className="px-0">
               {x.points.map((data, key) => (
-                <li className="my-3" key={key * 58}>
-                  {data}
-                </li>
+                <Fade>
+                  <li className="my-3" key={key * 58}>
+                    {data}
+                  </li>
+                </Fade>
               ))}
             </ul>
           </TabPanel>
