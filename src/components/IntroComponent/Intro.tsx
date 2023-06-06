@@ -8,10 +8,10 @@ const Intro = () => {
     <Row className="justify-content-md-center section-intro" id="intro">
       <Col lg={8} className="d-flex flex-column justify-content-center">
         <div>
-          <h1>Hi, My name is</h1>
+          <h1 className="color-custom-green">Hi, My name is</h1>
         </div>
         <div>
-          <h2>Bishal Raj Shakya.</h2>
+          <h2 className="color-slate-lightest">Bishal Raj Shakya.</h2>
         </div>
         <div>
           <h3>I build things in the web.</h3>

@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import navItems from "../../data/nav.json";
 import firstLetterUpperCase from "../../utilities/firstLetterUpperCase";
 import "./style.scss";
+import { Fade } from "react-reveal";
 
 const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
   const { intro, about, experience, work, contact } = navRef;
@@ -37,28 +38,30 @@ const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
       <ul className="ms-auto my-auto nav-list">
         {screenSize > 428 ? (
           navItems.map((item, index) => (
-            <li
-              onClick={() => {
-                switch (item.item) {
-                  case "about":
-                    onNavClick(about);
-                    break;
-                  case "experience":
-                    onNavClick(experience);
-                    break;
-                  case "work":
-                    onNavClick(work);
-                    break;
-                  case "contact":
-                    onNavClick(contact);
-                    break;
-                }
-              }}
-              key={index * 1561}
-              className="px-4"
-            >
-              <span>0{index + 1}.</span> {firstLetterUpperCase(item.item)}
-            </li>
+            <Fade left>
+              <li
+                onClick={() => {
+                  switch (item.item) {
+                    case "about":
+                      onNavClick(about);
+                      break;
+                    case "experience":
+                      onNavClick(experience);
+                      break;
+                    case "work":
+                      onNavClick(work);
+                      break;
+                    case "contact":
+                      onNavClick(contact);
+                      break;
+                  }
+                }}
+                key={index * 1561}
+                className="px-4"
+              >
+                <span>0{index + 1}.</span> {firstLetterUpperCase(item.item)}
+              </li>
+            </Fade>
           ))
         ) : (
           <div>

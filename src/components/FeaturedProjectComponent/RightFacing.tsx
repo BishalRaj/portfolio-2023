@@ -30,8 +30,8 @@ const RightFacing = ({ data, screenSize }: any) => {
         className="project-items my-auto"
         style={{ textAlign: "right" }}
       >
-        <h1>Featured Project</h1>
-        <h2>{title}</h2>
+        <h1 className="color-custom-green">Featured Project</h1>
+        <h2 className="color-slate-lightest">{title}</h2>
         <div className="fp-desc">{description}</div>
         <ul>
           {tools.map((x: String) => (

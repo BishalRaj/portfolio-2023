@@ -7,9 +7,9 @@ const Contact = ({ screenSize }: any) => {
       className="contact text-center d-flex align-items-center justify-content-center flex-column"
       id="contact"
     >
-      <h1>What's Next?</h1>
+      <h1 className="color-custom-green">What's Next?</h1>
 
-      <h2 className="my-3">Get In Touch</h2>
+      <h2 className="my-3 color-slate-lightest">Get In Touch</h2>
 
       <p className="mx-auto">
         I’m not actively looking for any new opportunities, my inbox is always
