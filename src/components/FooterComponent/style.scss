@@ -1,0 +1,16 @@
+@use "../../../public/scss/static" as sv;
+
+.footer-icons {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: inline;
+      font-size: small;
+      font-size: x-large;
+      color: sv.$slate;
+    }
+  }
+}

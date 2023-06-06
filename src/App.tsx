@@ -42,7 +42,7 @@ function App() {
   return (
     <Container fluid className="main-container">
       {/* Floating Nav Left */}
-      <SideFloatingLeft />
+      {screenSize > 428 ? <SideFloatingLeft /> : ""}
       {/* Section NavBar */}
       <NavBar
         onNavClick={onNavClick}
@@ -77,7 +77,7 @@ function App() {
         <Contact screenSize={screenSize} />
       </section>
 
-      <Footer />
+      <Footer screenSize={screenSize} />
     </Container>
   );
 }
