@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import { CiFolderOn } from "react-icons/ci";
-import { FiGithub } from "react-icons/fi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import ProjectData from "../../data/projects.json";
 import "./style.scss";
@@ -15,7 +15,11 @@ const PersonalProjects = ({ screenSize }: any) => {
         className="px-1 py-2  personalProject"
         id="personalProject"
       >
-        <Link to={"#"} className="project-link">
+        <Link
+          to={data.github ? data.github : "#"}
+          target="_blank"
+          className="project-link"
+        >
           <Fade bottom>
             <div className={`project-card mx-auto bg-light-navy p-4`}>
               <Row className="h-100 d-flex justify-content-between">
@@ -27,12 +31,20 @@ const PersonalProjects = ({ screenSize }: any) => {
                     </a>
                   </div>
                   <div className="text-right w-50 d-flex align-items-end py-2 justify-content-end repo-link">
-                    <a href={data.github} className="ml-1">
-                      <FiGithub size={20} />
-                    </a>
-                    <a href="/" className="ml-1">
-                      <FiGithub size={20} />
-                    </a>
+                    {data.github ? (
+                      <a href={data.github} target="_blank" className="ml-1">
+                        <FiGithub size={20} />
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                    {data.link ? (
+                      <a href={data.link} target="_blank" className="ml-1">
+                        <FiExternalLink size={20} />
+                      </a>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </Col>
                 {/* ---------------------------------------------------------------------------------------------- */}

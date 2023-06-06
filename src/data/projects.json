@@ -2,8 +2,8 @@
     {
         "title": "Sight",
         "description": "A comprehensive web application created for a Master's dissertation. It serves as a platform for data scraping, data visualization, and interactive graphing.",
-        "link": "https://sija.vercel.app",
-        "github": "/",
+        "link": "",
+        "github": "https://github.com/BishalRaj/sight-frontend",
         "technologies": [
             "React",
             "Axios",
@@ -11,10 +11,10 @@
         ]
     },
     {
-        "title": "Covax",
+        "title": "Covac",
         "description": "A Flutter-based hybrid app for locating nearby COVID-19 vaccination centers, booking appointments, and storing vaccination records, simplifying the process of getting vaccinated.",
         "link": "",
-        "github": "/",
+        "github": "https://github.com/BishalRaj/Covacs-Frontend",
         "technologies": [
             "Flutter",
             "MaterialUI",
@@ -23,10 +23,21 @@
         ]
     },
     {
+        "title": "CMS Flutter",
+        "description": "A hybrid application designed to imitate an inventory system, capable of monitoring sales, managing stock bookings, and providing point-of-sale functionality, thereby streamlining the inventory management process.",
+        "link": "",
+        "github": "https://github.com/BishalRaj/cms_flutter",
+        "technologies": [
+            "Flutter",
+            "MaterialUI",
+            "dart"
+        ]
+    },
+    {
         "title": "Sija",
         "description": "A dynamic and immersive platform designed to showcase the potential of a ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
         "link": "https://sija.vercel.app",
-        "github": "/",
+        "github": "https://github.com/BishalRaj/sija",
         "technologies": [
             "Next.js",
             "Tailwind CSS"
@@ -35,7 +46,7 @@
     {
         "title": "Niharika Travels",
         "description": "A web application built for a Canadian travel agency which provides an interactive platform for users to book travel packages, view destinations, and get information about travel arrangements.",
-        "link": "https://sija.vercel.app",
+        "link": "",
         "github": "https://github.com/BishalRaj/NiharikaTravels",
         "technologies": [
             "Node.js",
