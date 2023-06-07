@@ -1,7 +1,5 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
 import "./style.scss";
-const Contact = ({ screenSize }: any) => {
+const Contact = () => {
   return (
     <div
       className="contact text-center d-flex align-items-center justify-content-center flex-column"

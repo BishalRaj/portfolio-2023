@@ -52,7 +52,7 @@ const About = () => {
           </Col>
           <Col lg={3} className="my-auto">
             <div className="about-img-div grey-scale-img-div">
-              <img src="/images/me.jpg" alt="" className="" />
+              <img src="/images/me.png" alt="Bishal" />
             </div>
           </Col>
         </Row>

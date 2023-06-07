@@ -16,6 +16,7 @@ import FeaturedProject from "./components/FeaturedProjectComponent/FeaturedProje
 import Footer from "./components/FooterComponent/Footer";
 
 function App() {
+  // const [loading, setLoading] = useState(true);
   const intro = useRef(null);
   const about = useRef(null);
   const experience = useRef(null);
@@ -24,6 +25,10 @@ function App() {
 
   const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
   useEffect(() => {
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 2000);
+
     const handleResize = () => {
       setScreenSize(window.innerWidth);
     };
@@ -39,6 +44,7 @@ function App() {
       behavior: "smooth",
     });
   };
+
   return (
     <Container fluid className="main-container">
       {/* Floating Nav Left */}
@@ -74,7 +80,7 @@ function App() {
         <PersonalProjects screenSize={screenSize} />
       </section>
       <section ref={contact}>
-        <Contact screenSize={screenSize} />
+        <Contact />
       </section>
 
       <Footer screenSize={screenSize} />
