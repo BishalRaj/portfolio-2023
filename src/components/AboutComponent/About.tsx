@@ -12,10 +12,10 @@ const About = () => {
         <Row className="d-flex justify-content-center about-sans mx-auto">
           <Col lg={5} md={12} sm={12}>
             <Fade bottom>
-              <p className="section-title">
+              <div className="section-title my-3">
                 <span>01.</span> About Me
                 <span className="horizontal-line"></span>
-              </p>
+              </div>
 
               <p>
                 I am a forward-thinking software engineer with 2 years of
@@ -37,8 +37,10 @@ const About = () => {
                 I am familiar with tools like SonarQube, Git, Microsoft SQL
                 Server, and React Developer Tools.
               </p>
-              <p>
-                Here are a few technologies I’ve been working with recently:
+              <div>
+                <p className="my-0 py-0">
+                  Here are a few technologies I’ve been working with recently:
+                </p>
                 <ul className="skills-grid px-0">
                   <li>JavaScript (ES6+)</li>
                   <li>TypeScript</li>
@@ -47,12 +49,12 @@ const About = () => {
                   <li>Node.js</li>
                   <li>Express</li>
                 </ul>
-              </p>
+              </div>
             </Fade>
           </Col>
           <Col lg={3} className="my-auto">
             <div className="about-img-div grey-scale-img-div">
-              <img src="/images/me.png" alt="Bishal" />
+              <img src="/images/me.webp" loading="lazy" alt="Bishal" />
             </div>
           </Col>
         </Row>

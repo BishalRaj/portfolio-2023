@@ -2,7 +2,7 @@
     {
         "title": "Portfolio",
         "description": "A personal portfolio website built with Next.js and deployed on Vercel. The website showcases some of the web projects that I have worked on, and uses various APIs to display dynamic data. The website also features a dark theme, smooth animations, and a chat app.",
-        "image": "/images/featured/portfolio.png",
+        "image": "/images/featured/portfolio.webp",
         "link": "https://shakyab.vercel.app",
         "tools": [
             "VS Code",
@@ -13,7 +13,7 @@
     {
         "title": "YouMe Nepal",
         "description": "An online platform connecting students and teachers. With user registration, course listings, interactive classrooms, and assignment submission, it provides a complete learning solution. The frontend interface was meticulously developed for a visually pleasing and intuitive design, creating a seamless user experience. YouMe-School.com exemplifies the commitment to user-friendly educational platforms.",
-        "image": "/images/featured/youme.png",
+        "image": "/images/featured/youme.webp",
         "link": "https://www.youme-school.com",
         "tools": [
             "EJS",
@@ -24,7 +24,7 @@
     {
         "title": "Terakoya Academia",
         "description": "A dynamic and immersive platform designed to showcase the potential of your ecommerce business. SIJA has been thoughtfully crafted to provide an engaging and seamless user experience.",
-        "image": "/images/featured/terakoya.png",
+        "image": "/images/featured/terakoya.webp",
         "link": "https://terakoya-academia.com",
         "tools": [
             "PHP",

@@ -14,10 +14,11 @@ const PersonalProjects = ({ screenSize }: any) => {
         sm={12}
         className="px-1 py-2  personalProject"
         id="personalProject"
+        key={data.title + "personal"}
       >
-        <Link
-          to={data.github ? data.github : "#"}
-          target="_blank"
+        <div
+          // to={data.github ? data.github : "#"}
+          // target="_blank"
           className="project-link"
         >
           <Fade bottom>
@@ -60,14 +61,19 @@ const PersonalProjects = ({ screenSize }: any) => {
                 >
                   <ul>
                     {data.technologies.map((element) => (
-                      <li style={{ marginRight: "5%" }}>{element}</li>
+                      <li
+                        style={{ marginRight: "5%" }}
+                        key={element + "personal"}
+                      >
+                        {element}
+                      </li>
                     ))}
                   </ul>
                 </Col>
               </Row>
             </div>
           </Fade>
-        </Link>
+        </div>
       </Col>
     );
   });

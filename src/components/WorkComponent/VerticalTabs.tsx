@@ -80,6 +80,7 @@ export default function VerticalTabs() {
               }}
               label={x.nav}
               {...a11yProps(y)}
+              key={11 * y * 2}
             />
           );
         })}
@@ -87,7 +88,7 @@ export default function VerticalTabs() {
 
       {experience.map((x, y) => {
         return (
-          <TabPanel value={value} index={y}>
+          <TabPanel value={value} index={y} key={y * 15}>
             <p>
               {x.position} <a href="#">@ {x.company}</a>
             </p>
@@ -96,10 +97,8 @@ export default function VerticalTabs() {
             </p>
             <ul className="px-0">
               {x.points.map((data, key) => (
-                <Fade>
-                  <li className="my-3" key={key * 58}>
-                    {data}
-                  </li>
+                <Fade key={1.5 * key + data}>
+                  <li className="my-3">{data}</li>
                 </Fade>
               ))}
             </ul>

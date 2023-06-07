@@ -11,7 +11,7 @@ const FeaturedProject = ({ screenSize }: any) => {
 
   for (let index = 0; index < project.length; index++) {
     projects.push(
-      <Col lg={8} sm={12} className="mx-auto my-5">
+      <Col lg={8} sm={12} className="mx-auto my-5" key={project[index].title}>
         <Fade>
           {index % 2 == 0 ? (
             <LeftFacing data={project[index]} screenSize={screenSize} />

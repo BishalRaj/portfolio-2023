@@ -94,6 +94,7 @@ p {
     line-height: 30px;
     font-family: sv.$font-mono;
     font-size: small;
+    color: sv.$light-slate;
     &::before {
       content: "▹";
       color: sv.$green;

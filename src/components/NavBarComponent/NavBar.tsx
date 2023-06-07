@@ -38,7 +38,7 @@ const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
       <ul className="ms-auto my-auto nav-list">
         {screenSize > 428 ? (
           navItems.map((item, index) => (
-            <Fade left>
+            <Fade left key={index * 1561}>
               <li
                 onClick={() => {
                   switch (item.item) {
@@ -56,7 +56,6 @@ const NavBar = ({ onNavClick, navRef, screenSize }: any) => {
                       break;
                   }
                 }}
-                key={index * 1561}
                 className="px-4"
               >
                 <span>0{index + 1}.</span> {firstLetterUpperCase(item.item)}
