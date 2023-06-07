@@ -2,7 +2,12 @@ import React, { Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Bars } from "react-loading-icons";
 
-const RightFacing = ({ data, screenSize }: any) => {
+type propsTypes = {
+  data: any;
+  screenSize: number;
+};
+
+const RightFacing = ({ data, screenSize }: propsTypes) => {
   const { title, description, tools, image, link } = data;
 
   return (
