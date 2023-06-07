@@ -26,7 +26,7 @@ const FeaturedProject = ({ screenSize }: any) => {
     <Row
       className={`section-featured min-h-100vh mb-5 ${
         screenSize <= 428 ? "mx-2" : ""
-      } `}
+      }`}
     >
       <Col lg={8} sm={12} className="mx-auto">
         <p className="section-title mb-4">
