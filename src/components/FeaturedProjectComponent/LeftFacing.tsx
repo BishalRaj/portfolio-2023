@@ -16,14 +16,13 @@ const LeftFacing = ({ data, screenSize }: propsTypes) => {
         className="project-items  my-auto"
         style={{
           textAlign: "left",
-          // background: url(`${screenSize > 428 ? "" : ""}`),
         }}
       >
         <h1 className="color-custom-green">Featured Project</h1>
         <h2 className="color-slate-lightest">{title}</h2>
         <div className="fp-desc">{description}</div>
         <ul>
-          {tools.map((x: String, y: number) => (
+          {tools.map((x: String) => (
             <li key={x + "left"}>{x}</li>
           ))}
         </ul>
